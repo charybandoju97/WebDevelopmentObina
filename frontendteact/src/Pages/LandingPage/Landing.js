@@ -2,6 +2,8 @@ import Header from '../../Components/Header/Header.js';
 import './Landing.css';
 import lines from '../../Assets/backgroundlines.png';
 import women from '../../Assets/woman.webp';
+import JobProfile from '../../Components/JobProfiles/JobProfile.js';
+
 function Landing()
 {
    return (
@@ -21,12 +23,10 @@ function Landing()
             </div>
             <div className='BannerSubTwo'>
             <img src={women} width="100%" height="100%"/>
-       
             </div>
-            
         </div>
+        <JobProfile/>
     </div>
    );
 }
-
 export default Landing;

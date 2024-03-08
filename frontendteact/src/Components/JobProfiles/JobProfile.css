@@ -1,0 +1,60 @@
+.JobProfileContainer
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    width:100%;
+    margin-top:50px;
+}
+.ProfileSection
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:90%;
+}
+.imageIcon
+{
+    border-radius:999px;
+    box-shadow:0px 0px 8px rgba(0, 0, 0, 0.4);
+    margin-left:0px;
+}
+.ProfileHeadingSection
+{
+    margin-left:-500px;
+}
+.ProfileHeadingSection h2
+{
+    font-weight:500;
+}
+.ProfileHeadingSection h3
+{
+    font-weight:500;
+    font-size: 15px;
+    margin-top:-13px;
+}
+.ProfileLine
+{
+    height:0px;
+    border:1px solid rgba(128, 128, 128, 0.34);
+    width:90%;
+}
+.ProfileButtons
+{
+    width:20%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.ProfileButtons button
+{
+    background-color:transparent;
+    border-radius:3px;
+    border: none;
+    width:100px;
+    height:30px;
+    border: 1px solid rgba(0, 0, 0, 0.299);
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px  rgba(0, 0, 0, 0.299);
+}
