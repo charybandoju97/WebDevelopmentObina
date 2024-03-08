@@ -4,6 +4,14 @@ import lines from '../../Assets/backgroundlines.png';
 import women from '../../Assets/woman.webp';
 import JobProfile from '../../Components/JobProfiles/JobProfile.js';
 
+import neilsen from '../../Assets/nielsen.webp';
+import publicis from '../../Assets/publicis.webp';
+import technical from '../../Assets/technical.webp';
+import uplan from '../../Assets/uplan.webp';
+import junior from '../../Assets/junior.webp';
+import ibm from '../../Assets/ibm.webp';
+
+
 function Landing()
 {
    return (
@@ -25,7 +33,13 @@ function Landing()
             <img src={women} width="100%" height="100%"/>
             </div>
         </div>
-        <JobProfile/>
+        <JobProfile profileImg={neilsen} heading={"Content Data Editor"} description={"NielsenFull-Time, Mid-Level, Editorial Remote"}/>
+        <JobProfile profileImg={publicis} heading={"Copywriter"} description={"NielsenFull-Time, Mid-Level, Editorial Remote"}/>
+        <JobProfile profileImg={junior} heading={"Junior Offline Editor"} description={"NielsenFull-Time, Mid-Level, Editorial Remote"}/>
+        <JobProfile profileImg={technical} heading={"Technical Writer"} description={"NielsenFull-Time, Mid-Level, Editorial Remote"}/>
+        <JobProfile profileImg={uplan} heading={"Content Data Editor"} description={"NielsenFull-Time, Mid-Level, Editorial Remote"}/>
+        <JobProfile profileImg={ibm} heading={"Content Designer"} description={"NielsenFull-Time, Mid-Level, Editorial Remote"}/>
+
     </div>
    );
 }

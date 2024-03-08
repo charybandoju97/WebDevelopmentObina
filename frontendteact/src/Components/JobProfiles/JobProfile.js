@@ -1,17 +1,15 @@
 import './JobProfile.css';
-import neilsen from '../../Assets/nielsen.webp';
 
-function JobProfile()
+function JobProfile({profileImg,heading, description})
 {
     return (
         <div className="JobProfileContainer">
-               <hr className="ProfileLine"/>
             <div className="ProfileSection">
              
-                <img src={neilsen} width="70" height="70" className="imageIcon"/>
+                <img src={profileImg} width="70" height="70" className="imageIcon"/>
                 <div className="ProfileHeadingSection">
-                    <h2>Content Data Editor</h2>
-                    <h3>NielsenFull-Time, Mid-Level, Editorial Remote</h3>
+                    <h2>{heading}</h2>
+                    <h3>{description}</h3>
                 </div>
                 <div className="ProfileButtons">
                     <button>Apply</button>
