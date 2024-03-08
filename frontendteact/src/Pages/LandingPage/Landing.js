@@ -10,7 +10,7 @@ import technical from '../../Assets/technical.webp';
 import uplan from '../../Assets/uplan.webp';
 import junior from '../../Assets/junior.webp';
 import ibm from '../../Assets/ibm.webp';
-
+import Footer from '../../Components/Footer/Footer.js';
 
 function Landing()
 {
@@ -39,7 +39,7 @@ function Landing()
         <JobProfile profileImg={technical} heading={"Technical Writer"} description={"NielsenFull-Time, Mid-Level, Editorial Remote"}/>
         <JobProfile profileImg={uplan} heading={"Content Data Editor"} description={"NielsenFull-Time, Mid-Level, Editorial Remote"}/>
         <JobProfile profileImg={ibm} heading={"Content Designer"} description={"NielsenFull-Time, Mid-Level, Editorial Remote"}/>
-
+         <Footer/>
     </div>
    );
 }
