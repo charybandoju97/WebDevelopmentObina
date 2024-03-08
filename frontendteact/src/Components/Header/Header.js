@@ -11,9 +11,9 @@ function Header()
                 <h3>Membership</h3>
                 <h3>Newsletter</h3>
                 <h3>Writers</h3>
-                <h3>Blog</h3>
+                <h3 onClick={()=>{window.location.href="/"}} style={{cursor:"pointer"}}>Home</h3>
           </div>
-            <button>Sign Up</button>
+            <button onClick={()=>{window.location.href="/SignUp"}}>Sign Up</button>
     </div>
    );
 }

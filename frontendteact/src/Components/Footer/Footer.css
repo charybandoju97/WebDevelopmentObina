@@ -8,6 +8,8 @@
     background-color:#00413E;
     margin-top:50px;
     flex-direction: column;
+    position:static;
+    bottom:0;
 }
 .SectionFooterOne
 {

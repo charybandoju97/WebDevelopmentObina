@@ -47,12 +47,6 @@ function Footer()
           <h4>Writer Application</h4>
           <h4>Reviews</h4>
        </div>
-       <div className='FooterNavTwo'>
-
-       </div>
-       <div className='FooterNavFour'>
-
-       </div>
      </div>
      <div className='SectionFooterTwo'>
         <img src={fb} width="40" height="40"/>

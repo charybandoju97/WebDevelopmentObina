@@ -1,0 +1,68 @@
+.SignupContainer
+{
+    width:100%;
+    height: auto;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-direction: column;
+}
+.RegistrationForm
+{
+    margin-top:50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.RegistrationForm h2
+{
+  font-size:22px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.RegistrationForm h4
+{
+    font-size:18px;
+    font-weight:500;
+    color: rgba(0, 0, 0, 0.7);
+    margin-top:0px;
+}
+.Option
+{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    width:300px;
+    height:60px;
+    margin-bottom:20px;
+}
+.Option label
+{
+    margin-bottom:5px;
+}
+.Option input
+{
+    width:300px;
+    height:60px;
+    border: 1px solid rgba(0, 0, 0, 0.244);
+    border-radius:5px;
+    text-indent:5px;
+}
+.Option button
+{
+    height: 40px;
+    background-color: rgba(129, 211, 211, 0.4);
+    border: none;
+    border-radius:5px;
+    color: white;
+    font-size:18px;
+}
+.RegistrationForm h6
+{
+    margin-top:-20px;
+}
+.RegistrationForm h6 span
+{
+    color: rgb(30, 80, 80);
+    cursor: pointer;
+}
