@@ -2,6 +2,10 @@ import './Footer.css';
 import react from 'react';
 import logo from  '../../Assets/logo.svg';
 
+import dailer from  '../../Assets/dialer.png';
+import fb from  '../../Assets/facebook.png';
+import insta from  '../../Assets/Instagram.png';
+
 function Footer()
 {
   return (
@@ -51,9 +55,9 @@ function Footer()
        </div>
      </div>
      <div className='SectionFooterTwo'>
-        <img src=''/>
-        <img src=''/>
-        <img src=''/>
+        <img src={fb} width="40" height="40"/>
+        <img src={insta} width="40" height="40"/>
+        <img src={dailer} width="40" height="40"/>
      </div>
   </div>);
 }

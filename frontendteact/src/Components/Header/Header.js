@@ -1,12 +1,12 @@
 import './Header.css';
-import logo from '../../Assets/logo.svg';
+import logo from '../../Assets/logo2.jpg';
 
 function Header()
 {
    return (
     <div className='HeaderContainer'>
           <div className='HeaderNavigation'>
-                <img src={logo} width='160' height='160'/>
+                <img src={logo} width='100' height='60'/>
                 <h3>Jobs</h3>
                 <h3>Membership</h3>
                 <h3>Newsletter</h3>
