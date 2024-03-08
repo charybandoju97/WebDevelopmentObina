@@ -1,0 +1,60 @@
+.BannerContainer
+{
+    display: flex;
+    width:100%;
+    height:600px;
+    background-color: red;
+    margin-top:80px;
+}
+.BannerSubOne
+{
+    display: flex;
+    width:50%;
+    background-color: #00413E;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: white;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.BannerSubOne h1
+{
+    font-size:55px;
+    margin-left:25px;
+    margin-top:100px;
+}
+.BannerSubOne h3
+{
+    font-size:20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight:500;
+    margin-left:25px;
+    margin-top:0px;
+}
+.BannerSubOne h6
+{
+    font-size:13px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight:400;
+    margin-left:25px;
+    margin-top:10px;
+    color: rgba(255, 255, 255, 0.769);
+}
+.BannerSubTwo
+{
+    display: flex;
+    width:50%;
+}
+.BannerSubOne button
+{
+    border:none;
+    width:300px;
+    height:60px;
+    border-radius: 5px;
+    background-color: #ffca80;
+    color: #00413E;
+    font-size:18px;
+    margin-left:25px;
+    margin-left:25px;
+    margin-top:20px;
+}

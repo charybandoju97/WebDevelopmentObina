@@ -4,5 +4,33 @@
     justify-content: space-between;
     align-items: center;
     width:100%;
-    height:45px;
+    height:70px;
+    position:fixed;
+    top:0;
+    left:0;
+    background-color: white;
+}
+.HeaderNavigation
+{
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+    width:60%;
+}
+.HeaderNavigation h3{
+    font-size:16px;
+    font-weight:500;
+}
+.HeaderContainer button
+{
+    background-color: transparent;
+    margin-right:30px;
+    width:75px;
+    height:40px;
+    border: 1px solid rgba(0, 0, 0, 0.292);
+    font-weight:500;
+    border-radius:5px;
+    font-size:15px;
+    color: rgba(0, 0, 0, 0.8);
+    box-shadow:0px 0px 2px rgba(0, 0, 0, 0.199);
 }
