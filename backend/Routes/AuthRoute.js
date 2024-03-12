@@ -4,7 +4,19 @@ const registerModel=require('../Models/AuthModel.js')
 
 
 
-router.get("/removecookies",(req,res)=>{
+router.get('/cookieRequest',(req,res)=>{
+    const username=req.cookies.username;
+    if(username)
+    {
+        res.send({cookie:true});
+    }
+    else
+    {
+        res.send({cookie:false});
+
+    }
+});
+router.get("/logout",(req,res)=>{
     const cookie=req.cookies.username;
 
     if(cookie)
@@ -21,9 +33,7 @@ router.get("/removecookies",(req,res)=>{
 
 router.post("/login",async (req,res)=>{
     const loginBody=req.body;
-
-    console.log(loginBody);
-
+     console.log(loginBody);
     try
     {
         const user=await registerModel.findOne({email:loginBody.email});
@@ -31,12 +41,14 @@ router.post("/login",async (req,res)=>{
          {
             if(user.password!==loginBody.password)
             {
+                console.log("Login unsuccessful");
                 return res.send({msg:"Password not correct",login:false});
             }
             else
             {
+                console.log("Login");
                 res.cookie("username",user.email,{maxAge:900000,httpOnly:true});
-                return res.send({msg:"User already registered",login:true});
+                return res.send({msg:"User registered",login:true});
             }
          }
          else
@@ -52,8 +64,6 @@ router.post("/login",async (req,res)=>{
 
 router.post("/register",async(req,res)=>{
     const registerBody=req.body;
-
-    console.log(registerBody);
 
     try
     {
