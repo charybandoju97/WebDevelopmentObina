@@ -13,4 +13,7 @@ const formProfileSection={
     expirationDate:"",
  }
 
- export {formJobOverview,formProfileSection};
+
+ const url="http://localhost:2000";
+
+ export {formJobOverview,formProfileSection,url};

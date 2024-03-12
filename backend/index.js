@@ -3,15 +3,16 @@ const dotenv=require('dotenv').config({path:'.env'});
 const authRouter=require('./Routes/AuthRoute.js');
 const jobPostedRouter=require('./Routes/JobPostedRoute.js');
 const cors=require('cors');
+const connectDb=require('./Database/Database.js');
 const app=express();
 
 app.use(cors({credentials:true,
- origin:"http://localhost:"
+ origin:"http://localhost:3000"
 }));
 
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
-
+connectDb();
 app.use('/',authRouter);
 app.use('/jobs',jobPostedRouter);
 
