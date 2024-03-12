@@ -33,12 +33,12 @@ function Landing()
             <img src={women} width="100%" height="100%"/>
             </div>
         </div>
-        <JobProfile profileImg={neilsen} heading={"Content Data Editor"} description={"NielsenFull-Time, Mid-Level, Editorial Remote"}/>
-        <JobProfile profileImg={publicis} heading={"Copywriter"} description={"NielsenFull-Time, Mid-Level, Editorial Remote"}/>
-        <JobProfile profileImg={junior} heading={"Junior Offline Editor"} description={"NielsenFull-Time, Mid-Level, Editorial Remote"}/>
-        <JobProfile profileImg={technical} heading={"Technical Writer"} description={"NielsenFull-Time, Mid-Level, Editorial Remote"}/>
-        <JobProfile profileImg={uplan} heading={"Content Data Editor"} description={"NielsenFull-Time, Mid-Level, Editorial Remote"}/>
-        <JobProfile profileImg={ibm} heading={"Content Designer"} description={"NielsenFull-Time, Mid-Level, Editorial Remote"}/>
+        <JobProfile profileImg={neilsen} heading={"Content Data Editor"} description={"NielsenFull-Time, Mid-Level, Editorial Remote"} paramID="contentDataEditor"/>
+        <JobProfile profileImg={publicis} heading={"Copywriter"} description={"NielsenFull-Time, Mid-Level, Editorial Remote"} paramID="copyWriter"/>
+        <JobProfile profileImg={junior} heading={"Junior Offline Editor"} description={"NielsenFull-Time, Mid-Level, Editorial Remote"} paramID="offlineEditor"/>
+        <JobProfile profileImg={technical} heading={"Technical Writer"} description={"NielsenFull-Time, Mid-Level, Editorial Remote"} paramID="technicalWriter"/>
+        <JobProfile profileImg={uplan} heading={"Content Data Editor"} description={"NielsenFull-Time, Mid-Level, Editorial Remote"} paramID="dataEditor"/>
+        <JobProfile profileImg={ibm} heading={"Content Designer"} description={"NielsenFull-Time, Mid-Level, Editorial Remote"} paramID="contentDesigner"/>
          <Footer/>
     </div>
    );

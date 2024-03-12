@@ -1,0 +1,51 @@
+.SectionContainer
+{
+    display: flex;
+    width: 100%;
+    height:auto;
+    justify-content: center;
+    background-color: cornsilk;
+}
+.SubSectionContainerOne
+{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    width:45%;
+    height:400px;
+}
+.SubSectionContainerOne .SectionText
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: column;
+    width:100%;
+    margin-left:25px;
+}
+.SectionText .SectionSubText
+{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    width:90%;
+   
+}
+.SectionSubText h4
+{
+    font-weight:500;
+}
+.SubSectionContainerTwo
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width:45%;
+  height:400px;
+
+}
+.SubSectionContainerTwo h5
+{
+    font-size:30px;
+    font-weight:500;
+}

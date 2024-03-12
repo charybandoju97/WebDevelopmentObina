@@ -1,11 +1,10 @@
 import './JobProfile.css';
 
-function JobProfile({profileImg,heading, description})
+function JobProfile({profileImg,heading, description,paramID})
 {
     return (
         <div className="JobProfileContainer">
             <div className="ProfileSection">
-             
                 <img src={profileImg} width="70" height="70" className="imageIcon"/>
                 <div className="ProfileHeadingSection">
                     <h2>{heading}</h2>
@@ -13,7 +12,7 @@ function JobProfile({profileImg,heading, description})
                 </div>
                 <div className="ProfileButtons">
                     <button>Apply</button>
-                    <button>View Job</button>
+                    <button onClick={()=>window.location.href=`/JobProfile/${paramID}`}>View Job</button>
                 </div>
             </div>
             <hr className="ProfileLine"/>
