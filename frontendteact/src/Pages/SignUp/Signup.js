@@ -9,9 +9,6 @@ function Signup()
     const[email,setEmail]=useState("");
     const[password,setPassword]=useState("");
     const[confirmPassword,setConfirmPassword]=useState("");
-    
-    const[error,setError]=useState("");
-
 
     let formSignUp={
       email:email,
@@ -19,6 +16,21 @@ function Signup()
     }
 
     const submitRegisterData=()=>{
+         if(!email)
+         {
+           alert("Write email address!");
+           return;
+         }
+         if(!password)
+         {
+           alert("Write passwor!");
+           return;
+         }
+         if(password!==confirmPassword)
+         {
+           alert("Password not match!");
+           return;
+         }
          register(formSignUp)
          .then(data=>console.log(data))
          .catch(err=>{throw new err});

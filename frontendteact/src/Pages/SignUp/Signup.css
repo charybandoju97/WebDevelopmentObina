@@ -67,3 +67,9 @@
     color: rgb(30, 80, 80);
     cursor: pointer;
 }
+@media screen and (max-width: 480px) {
+   .SignupContainer
+   {
+    margin-top:400px;
+   }
+}

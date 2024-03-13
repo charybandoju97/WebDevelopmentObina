@@ -59,3 +59,33 @@
     border-radius: 5px;
     box-shadow: 0px 0px 5px  rgba(0, 0, 0, 0.299);
 }
+@media screen and (max-width: 480px) {
+    .JobProfileContainer
+    {
+        margin-top:200px;
+        margin-bottom:100px;
+        justify-content: space-around;
+    }
+   .ProfileSection
+   {
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+    height: 300px;
+   }
+   .ProfileButtons
+   {
+    justify-content: space-evenly;
+    width:100%;
+   }
+   .ProfileHeadingSection
+   {
+    width:100%;
+    margin-left:0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   }
+}
