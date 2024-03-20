@@ -13,7 +13,6 @@ router.get('/cookieRequest',(req,res)=>{
     else
     {
         res.send({cookie:false});
-
     }
 });
 router.get("/logout",(req,res)=>{
