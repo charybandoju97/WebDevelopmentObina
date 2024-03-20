@@ -26,7 +26,16 @@ function Landing()
                 We hand-pick paid writing opportunities, including remote,<br/> 
                 freelance, contract, part-time, and full-time.
                 </h3>
-                <button>Subscribe To Job NewsLetter</button>
+                <button onClick={()=>{
+                       if(localStorage.getItem("LoginText")==="Logout")
+                       {
+                            alert("Subscribed Successfully");
+                       }
+                       else
+                       {
+                            alert("Login First!");
+                       }
+                }}>Subscribe To Job NewsLetter</button>
                 <h6>Get the best writing jobs weekly. Free.</h6>
             </div>
             <div className='BannerSubTwo'>
@@ -34,12 +43,22 @@ function Landing()
             </div>
         </div>
         <div className='ProfileLanding'>
-        <JobProfile profileImg={neilsen} heading={"Content Data Editor"} description={"NielsenFull-Time, Mid-Level, Editorial Remote"} paramID="contentDataEditor"/>
-        <JobProfile profileImg={publicis} heading={"Copywriter"} description={"NielsenFull-Time, Mid-Level, Editorial Remote"} paramID="copyWriter"/>
-        <JobProfile profileImg={junior} heading={"Junior Offline Editor"} description={"NielsenFull-Time, Mid-Level, Editorial Remote"} paramID="offlineEditor"/>
-        <JobProfile profileImg={technical} heading={"Technical Writer"} description={"NielsenFull-Time, Mid-Level, Editorial Remote"} paramID="technicalWriter"/>
-        <JobProfile profileImg={uplan} heading={"Content Data Editor"} description={"NielsenFull-Time, Mid-Level, Editorial Remote"} paramID="dataEditor"/>
-        <JobProfile profileImg={ibm} heading={"Content Designer"} description={"NielsenFull-Time, Mid-Level, Editorial Remote"} paramID="contentDesigner"/>
+        <JobProfile profileImg={neilsen} heading={"Content Data Editor"} description={"NielsenFull-Time, Mid-Level, Editorial Remote"} paramID="contentDataEditor"
+        link="/JobProfile/Applied/ContentDataEditor"/>
+        <JobProfile profileImg={publicis} heading={"Copywriter"} description={"NielsenFull-Time, Mid-Level, Editorial Remote"} paramID="copyWriter"
+        link="/JobProfile/Applied/Copywriter"/>
+        <JobProfile profileImg={junior} heading={"Junior Offline Editor"} description={"NielsenFull-Time, Mid-Level, Editorial Remote"} paramID="offlineEditor"
+        link="/JobProfile/Applied/JuniorOfflineEditor"
+        />
+        <JobProfile profileImg={technical} heading={"Technical Writer"} description={"NielsenFull-Time, Mid-Level, Editorial Remote"} paramID="technicalWriter"
+        link="/JobProfile/Applied/TechnicalWriter"
+       />
+        <JobProfile profileImg={uplan} heading={"Content Data Editor"} description={"NielsenFull-Time, Mid-Level, Editorial Remote"} paramID="dataEditor"
+         link="/JobProfile/Applied/ContentDataEditor"
+        />
+        <JobProfile profileImg={ibm} heading={"Content Designer"} description={"NielsenFull-Time, Mid-Level, Editorial Remote"} paramID="contentDesigner"
+        link="/JobProfile/Applied/ContentDesigner"
+        />
         </div>
          <Footer/>
     </div>

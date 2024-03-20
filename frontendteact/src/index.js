@@ -6,6 +6,8 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import Signup from './Pages/SignUp/Signup.js';
 import Login from './Pages/LoginPage/Login.js';
 import JobProfile from './Pages/JobProfiles/JobProfile.js';
+import AppliedJob from './Pages/AppliedJobs/AppliedJob.js';
+import NewsLetter from './Pages/NewsLetter/NewsLetter.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -16,6 +18,8 @@ root.render(
       <Route path="/Signup" element={<Signup/>}/>
       <Route path="/Login" element={<Login/>}/>
       <Route path="/JobProfile/:id" element={<JobProfile/>}/>
+      <Route path="/NewsLetter" element={<NewsLetter/>}/>
+      <Route path="/JobProfile/Applied/:id" element={<AppliedJob/>}/>
     </Routes>
     </BrowserRouter>
   </React.StrictMode>

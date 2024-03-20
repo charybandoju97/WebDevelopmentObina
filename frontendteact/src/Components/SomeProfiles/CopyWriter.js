@@ -9,7 +9,7 @@ function ContentDataEditor()
        jobType:"Ecommerce",
        partOrFull:"Full",
        salaryRange:"$51,000 - $85,000",
-       currentStatus:"Application Open"
+       currentStatus:true
     }
 
     const formJobOverview={
@@ -28,6 +28,7 @@ function ContentDataEditor()
             salaryRange={formProfileSection.salaryRange}
             currentStatus={formProfileSection.currentStatus}
             img={logo}
+            link={'/JobProfile/Applied/CopyWriter'}
            />
            <JobOverview
             datePosted={formJobOverview.datePosted}

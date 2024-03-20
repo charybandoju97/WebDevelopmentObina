@@ -9,7 +9,7 @@ function CopyWriter()
        jobType:"Content",
        partOrFull:"Full",
        salaryRange:"$51,000 - $85,000",
-       currentStatus:"Application Open"
+       currentStatus:true
     }
 
     const formJobOverview={
@@ -28,6 +28,7 @@ function CopyWriter()
             salaryRange={formProfileSection.salaryRange}
             currentStatus={formProfileSection.currentStatus}
             img={logo}
+            link={'/JobProfile/Applied/ContentDataEditor'}
            />
            <JobOverview
             datePosted={formJobOverview.datePosted}

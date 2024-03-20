@@ -1,6 +1,6 @@
 import './JobProfile.css';
 
-function JobProfile({profileImg,heading, description,paramID})
+function JobProfile({profileImg,heading, description,paramID,link})
 {
     return (
         <div className="JobProfileContainer">
@@ -11,7 +11,7 @@ function JobProfile({profileImg,heading, description,paramID})
                     <h3>{description}</h3>
                 </div>
                 <div className="ProfileButtons">
-                    <button>Apply</button>
+                    <button onClick={()=>window.location.href=link}>Apply</button>
                     <button onClick={()=>window.location.href=`/JobProfile/${paramID}`}>View Job</button>
                 </div>
             </div>

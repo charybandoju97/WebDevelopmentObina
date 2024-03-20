@@ -50,7 +50,7 @@ function Header()
                 <img src={logo} width='100' height='60'/>
                 <h3>Jobs</h3>
                 <h3>Membership</h3>
-                <h3>Newsletter</h3>
+                <h3 onClick={()=>{window.location.href="/NewsLetter"}}>Newsletter</h3>
                 <h3>Writers</h3>
                 <h3 onClick={()=>{window.location.href="/"}} style={{cursor:"pointer"}}>Home</h3>
           </div>

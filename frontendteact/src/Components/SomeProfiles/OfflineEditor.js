@@ -9,7 +9,7 @@ function OfflineEditor()
        jobType:"Ecommerce",
        partOrFull:"Full",
        salaryRange:"$51,000 - $85,000",
-       currentStatus:"Application Open"
+       currentStatus:false
     }
 
     const formJobOverview={
@@ -28,6 +28,7 @@ function OfflineEditor()
             salaryRange={formProfileSection.salaryRange}
             currentStatus={formProfileSection.currentStatus}
             img={logo}
+            link={'/JobProfile/Applied/OfflineEditor'}
            />
            <JobOverview
             datePosted={formJobOverview.datePosted}

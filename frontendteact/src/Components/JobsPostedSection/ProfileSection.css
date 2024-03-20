@@ -42,7 +42,15 @@
   align-items: center;
   width:45%;
   height:400px;
-
+  flex-direction: column;
+}
+.SubSectionContainerTwo button
+{
+    width:100px;
+    height: 40px;
+    background-color: #00413E;
+    color: white;
+    border: none;
 }
 .SubSectionContainerTwo h5
 {
