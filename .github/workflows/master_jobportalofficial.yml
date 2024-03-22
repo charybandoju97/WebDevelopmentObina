@@ -53,7 +53,6 @@ jobs:
 
       - name: Unzip artifact for deployment
         run: unzip release.zip
-        working-directory: backend
       
       - name: Login to Azure
         uses: azure/login@v1
