@@ -16,7 +16,7 @@ jobs:
       - name: Set up Node.js version
         uses: actions/setup-node@v3
         with:
-          node-version: '14'
+          node-version: '18'
 
       - name: npm install, build, and test
         run: |
@@ -25,7 +25,7 @@ jobs:
           npm run build --if-present
 
       - name: Zip artifact for deployment
-        run: zip -r backend.zip backend/*
+        run: zip -r backend.zip ./*
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v2
