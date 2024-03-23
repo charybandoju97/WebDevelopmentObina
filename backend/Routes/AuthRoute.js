@@ -1,6 +1,7 @@
 const express=require('express');
 const router=express.Router();
-const registerModel=require('../Models/AuthModel.js')
+const registerModel=require('../Models/AuthModel.js');
+const profileModel = require('../Models/ProfileModel.js');
 
 
 
@@ -61,9 +62,10 @@ router.post("/login",async (req,res)=>{
     }
 });
 
+let email=null;
 router.post("/register",async(req,res)=>{
     const registerBody=req.body;
-
+    email=registerBody.email;
     try
     {
         const user=await registerModel.findOne({email:registerBody.email});
@@ -82,6 +84,43 @@ router.post("/register",async(req,res)=>{
     {
        return res.send({msg:err,register:false});
     }
+});
+
+
+router.route("/profile")
+  .post(async(req,res)=>{
+    const {name,age,mobile,address}=req.body;
+    try
+    {
+            let userCreated=new profileModel({email,name,age,mobile,address});
+            await userCreated.save();
+            return res.send({msg:"User profile submitted",profile:true});    
+    }
+    catch(err)
+    {
+       return res.send({msg:err,profile:false});
+    }
+}).get(async(req,res)=>{
+    const username=req.cookies.username;
+    try
+    {
+        const profileDate=await profileModel.findOne({email:username});
+
+        if(profileDate)
+        {
+            console.log(profileDate);
+             res.send({profileData:profileDate,profile:true});
+        }
+        else
+        {
+            res.send({msg:"No profile found",profile:false});
+
+        }
+    }
+   catch(err)
+   {
+    res.send({msg:err,profile:false});
+   }
 });
 
 module.exports =router;

@@ -48,11 +48,12 @@ function Header()
     <div className='HeaderContainer'>
           <div className='HeaderNavigation'>
                 <img src={logo} width='100' height='60'/>
-                <h3>Jobs</h3>
+                <h3 onClick={()=>window.location.href="/Jobs"}>Jobs</h3>
                 <h3>Membership</h3>
                 <h3 onClick={()=>{window.location.href="/NewsLetter"}}>Newsletter</h3>
                 <h3>Writers</h3>
                 <h3 onClick={()=>{window.location.href="/"}} style={{cursor:"pointer"}}>Home</h3>
+                { localStorage.getItem("LoginText")==="Logout"?<h3 onClick={()=>{window.location.href="/MyProfile"}} style={{cursor:"pointer"}}>My Profile</h3>:undefined}
           </div>
             <button onClick={()=>{checkForLogout()}}>{signUpButtonName}</button>
     </div>

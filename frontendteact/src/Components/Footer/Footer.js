@@ -49,9 +49,9 @@ function Footer()
        </div>
      </div>
      <div className='SectionFooterTwo'>
-        <img src={fb} width="40" height="40"/>
-        <img src={insta} width="40" height="40"/>
-        <img src={dailer} width="40" height="40"/>
+        <img src={fb} width="40" height="40" onClick={()=>window.location.href="http://www.facebook.com"}/>
+        <img src={insta} width="40" height="40"  onClick={()=>window.location.href="http://www.instagram.com"}/>
+        <img src={dailer} width="40" height="40" />
      </div>
   </div>);
 }

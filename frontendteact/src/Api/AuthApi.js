@@ -5,6 +5,8 @@ const loginEndPoint="login";
 const registerEndPoint="register";
 const logoutEndPoint="logout";
 const cookieCheckEndPoint="cookieRequest";
+const profileEndPoint="profile";
+
 
 const login=async(loginData)=>{
     try{
@@ -86,4 +88,38 @@ const register=async(registerData)=>{
     }
 }
 
-export {login,logout,register,checkForCookie};
+const profile=async(profileData)=>{
+    try{
+    const response=await axios.post(`${url}/${profileEndPoint}`,profileData,{headers:{'Content-Type':'application/json'},withCredentials:true});
+        if(response.data.profile)
+        {
+        return response.data; 
+        }
+        else
+        {
+        return "unsuccessfull submission";
+        }
+    }
+    catch(err)
+    {
+        throw err;
+    }
+}
+const myProfile=async(profileData)=>{
+    try{
+    const response=await axios.get(`${url}/${profileEndPoint}`,{headers:{'Content-Type':'application/json'},withCredentials:true});
+        if(response.data.profile)
+        {
+        return response.data.profileData; 
+        }
+        else
+        {
+        return "unsuccessfull submission";
+        }
+    }
+    catch(err)
+    {
+        throw err;
+    }
+}
+export {login,logout,register,checkForCookie,profile,myProfile};

@@ -1,11 +1,13 @@
-import { useState } from 'react';
+import { useState} from 'react';
 import Footer from '../../Components/Footer/Footer';
 import Header from '../../Components/Header/Header';
 import './Signup.css';
 import { register } from '../../Api/AuthApi.js';
+import { useNavigate } from 'react-router-dom';
 
 function Signup()
 {
+  const navigate=useNavigate();
     const[email,setEmail]=useState("");
     const[password,setPassword]=useState("");
     const[confirmPassword,setConfirmPassword]=useState("");
@@ -32,7 +34,7 @@ function Signup()
            return;
          }
          register(formSignUp)
-         .then(data=>console.log(data))
+         .then(data=>navigate("/Profile"))
          .catch(err=>{throw new err});
     }
 
@@ -44,11 +46,11 @@ function Signup()
              <h4>Welcome! Get started with a free account.</h4>
              <div className='Option'>
               <label>Email</label>
-              <input type="text" placeholder='Email' onChange={(e)=>setEmail(e.target.value)}/>
+              <input type="email" placeholder='Email' onChange={(e)=>setEmail(e.target.value)}/>
              </div>
              <div className='Option'>
               <label>New Password</label>
-              <input type="text" placeholder='New Password' onChange={(e)=>setPassword(e.target.value)}/>
+              <input type="password" placeholder='New Password' onChange={(e)=>setPassword(e.target.value)}/>
              </div>
              <div className='Option'>
               <label>Repeat New Password</label>

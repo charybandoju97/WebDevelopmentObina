@@ -52,11 +52,11 @@ function Login()
              <h4>Welcome back! Please enter your details..</h4>
              <div className='Option'>
               <label>Email</label>
-              <input type="text" placeholder='Email' onChange={(e)=>setEmail(e.target.value)}/>
+              <input type="email" placeholder='Email' onChange={(e)=>setEmail(e.target.value)}/>
              </div>
              <div className='Option'>
               <label>Password</label>
-              <input type="text" placeholder='Password' onChange={(e)=>setPassword(e.target.value)}/>
+              <input type="password" placeholder='Password' onChange={(e)=>setPassword(e.target.value)}/>
              </div>
              <div className='Option'>
                <button onClick={()=>submitLoginData()}>Login</button>
