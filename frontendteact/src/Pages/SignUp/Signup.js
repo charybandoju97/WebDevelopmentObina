@@ -24,7 +24,7 @@ function Signup()
            alert("Write email address!");
            return;
          }
-         if(reg.test(email))
+         if(!reg.test(email))
          {
            alert("Write proper email address!");
            return;
