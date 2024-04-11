@@ -18,9 +18,15 @@ function Signup()
     }
 
     const submitRegisterData=()=>{
+      let reg=/^[^\s@]+@[^\s@]+\.[^\s@]+$/
          if(!email)
          {
            alert("Write email address!");
+           return;
+         }
+         if(reg.test(email))
+         {
+           alert("Write proper email address!");
            return;
          }
          if(!password)
@@ -54,7 +60,7 @@ function Signup()
              </div>
              <div className='Option'>
               <label>Repeat New Password</label>
-              <input type="text" placeholder='Repeat New Password' onChange={(e)=>setConfirmPassword(e.target.value)}/>
+              <input type="password" placeholder='Repeat New Password' onChange={(e)=>setConfirmPassword(e.target.value)}/>
              </div>
              <div className='Option'>
                <button onClick={()=>submitRegisterData()}>Sign Up</button>
