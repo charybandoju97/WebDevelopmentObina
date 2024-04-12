@@ -58,6 +58,10 @@
     color: white;
     font-size:18px;
 }
+.Option button:hover
+{
+    background-color: rgba(129, 211, 211, 1);
+}
 .RegistrationForm h6
 {
     margin-top:-20px;

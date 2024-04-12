@@ -15,5 +15,6 @@ const formProfileSection={
 
 
  const url="https://webdevelopmentobina.onrender.com";
+// const url="http://localhost:2000";
 
  export {formJobOverview,formProfileSection,url};

@@ -8,6 +8,7 @@ const connectDb=require('./Database/Database.js');
 const app=express();
 
 app.use(cors({credentials:true,
+    // origin:"http://localhost:3000"
  origin:"https://webdevelopmentobina-1.onrender.com"
 }));
 
